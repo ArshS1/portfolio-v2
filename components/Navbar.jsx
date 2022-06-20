@@ -38,8 +38,8 @@ const Navbar = () => {
       }
     >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16 bg-[#a8d0e6] ">
-        <Link href="/#home">
-          <Image src={navIcon} alt="/" width="90" height="80" />
+        <Link href="/#home" className="icon">
+          <Image className="icon" src={navIcon} alt="/" width="90" height="80" />
         </Link>
         <div>
           <ul className="hidden md:flex">

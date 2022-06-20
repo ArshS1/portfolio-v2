@@ -53,7 +53,7 @@ const Contact = () => {
             <a
               href="mailto:sarshdeep2774@gmail.com?subject=Hello Arsh! This is coming from your site."
               target="_blank"
-              rel="author"
+              rel="noreferrer"
               className="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold text-[#f76c6c] transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 group mt-5"
             >
               <span className="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-[#f76c6c] group-hover:h-full"></span>

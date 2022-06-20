@@ -10,7 +10,7 @@ const About = () => {
             About
           </p>
           <h2 className="py-4">Learn more about me</h2>
-          <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300 personalImage md:hidden">
+          <div className="h-auto m-auto shadow-xl shadow-gray-400 rounded-xl w-52 flex p-0 justify-center hover:scale-105 ease-in duration-300 personalImage md:hidden">
           <img
             className="rounded-xl h-40"
             src="assets/cartoon.png"
@@ -27,7 +27,7 @@ const About = () => {
             the gym, playing basketball in my backyard, or watching anime.
           </p>
         </div>
-        <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300 personalImage hidden md:flex">
+        <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-0 hover:scale-105 ease-in duration-300 personalImage hidden md:flex">
           <img
             className="rounded-xl object-fit h-56"
             src="assets/cartoon.png"

@@ -34,6 +34,7 @@ const Main = () => {
               href="https://www.linkedin.com/in/arshdsingh"
               className="cursor-pointer"
               target="_blank"
+              rel="author"
             >
               <div className="rounded-full shadow-xl shadow-gray-400 p-6 hover:scale-105 hover:shadow-none ease-in duration-500 icons">
                 <FaLinkedinIn />
@@ -43,6 +44,7 @@ const Main = () => {
               href="https://github.com/arshs1"
               className="cursor-pointer"
               target="_blank"
+              rel="author"
             >
               <div className="rounded-full shadow-xl shadow-gray-400 p-6  hover:scale-105 hover:shadow-none ease-in duration-500 icons">
                 <FaGithub />
@@ -52,7 +54,8 @@ const Main = () => {
               href="mailto:sarshdeep2774@gmail.com"
               className="cursor-pointer"
               target="_blank"
-            >
+            
+              rel="author">
               <div className="rounded-full shadow-xl shadow-gray-400 p-6  hover:scale-105 hover:shadow-none ease-in duration-500 icons">
                 <AiOutlineMail />
               </div>

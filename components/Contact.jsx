@@ -14,8 +14,6 @@ const Contact = () => {
         </p>
         <h2 className="py-4">Get In Touch</h2>
         <div className=" mt-10 flex lg:grid-cols-5 gap-8 items-center">
-
-
           {/* right  */}
           <div className="col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4 p-10 flex flex-col items-center">
             <h2 className="py-2 text-2xl">Arshdeep Singh</h2>
@@ -24,17 +22,29 @@ const Contact = () => {
             </p>
             <p className="uppercase pt-8 tracking-widest">Connect with me</p>
             <div className="w-full flex  items-center mt-5 justify-evenly">
-              <a href="https://www.linkedin.com/in/arshdsingh" target="_blank">
+              <a
+                href="https://www.linkedin.com/in/arshdsingh"
+                target="_blank"
+                rel="author"
+              >
                 <div className="rounded-full shadow-xl shadow-gray-400 p-4  cursor-pointer hover:scale-105 ease-in duration-500 icon hover:shadow-none">
                   <FaLinkedinIn />
                 </div>
               </a>
-              <a href="https://www.instagram.com/arshhhyyy/" target="_blank">
+              <a
+                href="https://www.instagram.com/arshhhyyy/"
+                target="_blank"
+                rel="author"
+              >
                 <div className="rounded-full shadow-xl shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-500 icon hover:shadow-none">
                   <FaInstagram />
                 </div>
               </a>
-              <a href="mailto:sarshdeep2774@gmail.com" target="_blank">
+              <a
+                href="mailto:sarshdeep2774@gmail.com"
+                target="_blank"
+                rel="author"
+              >
                 <div className="rounded-full shadow-xl shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-500 icon hover:shadow-none">
                   <AiOutlineMail />
                 </div>
@@ -43,42 +53,43 @@ const Contact = () => {
             <a
               href="mailto:sarshdeep2774@gmail.com?subject=Hello Arsh! This is coming from your site."
               target="_blank"
-              class="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold text-[#f76c6c] transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 group mt-5"
+              rel="author"
+              className="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold text-[#f76c6c] transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 group mt-5"
             >
-              <span class="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-[#f76c6c] group-hover:h-full"></span>
-              <span class="absolute right-0 pr-4 duration-200 ease-out group-hover:translate-x-12">
+              <span className="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-[#f76c6c] group-hover:h-full"></span>
+              <span className="absolute right-0 pr-4 duration-200 ease-out group-hover:translate-x-12">
                 <svg
-                  class="w-5 h-5 text-[#f76c6c]"
+                  className="w-5 h-5 text-[#f76c6c]"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                     strokeWidth="2"
                     d="M14 5l7 7m0 0l-7 7m7-7H3"
                   ></path>
                 </svg>
               </span>
-              <span class="absolute left-0 pl-2.5 -translate-x-12 group-hover:translate-x-0 ease-out duration-200">
+              <span className="absolute left-0 pl-2.5 -translate-x-12 group-hover:translate-x-0 ease-out duration-200">
                 <svg
-                  class="w-5 h-5 text-white"
+                  className="w-5 h-5 text-white"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     d="M14 5l7 7m0 0l-7 7m7-7H3"
                   ></path>
                 </svg>
               </span>
-              <span class="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white tracking-widest uppercase">
+              <span className="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white tracking-widest uppercase">
                 Say hi
               </span>
             </a>

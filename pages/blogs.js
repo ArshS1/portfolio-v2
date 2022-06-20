@@ -36,6 +36,7 @@ const blogs = ({ blogs }) => {
           <div className="grid justify-center mx-auto items-center lg:grid-cols-3 gap-4 ">
             {blogs?.map((item) => {
               return (
+                // key on the main rendering element no the LInk tag
                 <div className="col-span-1" key={item.slug.current}>
                   <Link
                     key={item.slug.current}

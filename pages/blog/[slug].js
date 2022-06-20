@@ -3,9 +3,9 @@ import { useRouter } from "next/router";
 import { createClient } from "next-sanity";
 import PortableText from "react-portable-text";
 import imageUrlBuilder from "@sanity/image-url";
-
+import Link from "next/link";
 const Post = ({ blog }) => {
-  // use router to read the url and fetch the right blog 
+  // use router to read the url and fetch the right blog
   const router = useRouter();
   const { slug } = router.query;
   const client = createClient({
@@ -15,7 +15,7 @@ const Post = ({ blog }) => {
   });
   const builder = imageUrlBuilder(client);
 
-  const convertDate = new Date(blog.createdAt); 
+  const convertDate = new Date(blog.createdAt);
 
   return (
     <>
@@ -42,7 +42,7 @@ const Post = ({ blog }) => {
         </p>
         <div className="mt-4 uppercase text-3xl tracking-widest text-[#f76c6c]">
           {blog.title}
-        </div> 
+        </div>
         <div>
           <div className="mt-2 py-2 text-gray-600 text-xl w-[90vw] lg:w-[70vw] text-center">
             <PortableText
@@ -62,57 +62,67 @@ const Post = ({ blog }) => {
           </div>
         </div>
 
-            <div className="flex items-center mt-2">
-      <img className="w-10 h-10 rounded-full mr-4 border-2" src="/assets/cartoon.png" alt="Avatar of a random" />
-      <div className="text-sm">
-        <p className="text-gray-900 leading-none">Arshdeep Singh</p>
-        <p className="text-gray-600">{convertDate.getMonth() + "/" + convertDate.getDate() + "/" + convertDate.getFullYear()}</p>
+        <div className="flex items-center mt-2">
+          <img
+            className="w-10 h-10 rounded-full mr-4 border-2"
+            src="/assets/cartoon.png"
+            alt="Avatar of a random"
+          />
+          <div className="text-sm">
+            <p className="text-gray-900 leading-none">Arshdeep Singh</p>
+            <p className="text-gray-600">
+              {convertDate.getMonth() +
+                "/" +
+                convertDate.getDate() +
+                "/" +
+                convertDate.getFullYear()}
+            </p>
+          </div>
+        </div>
       </div>
-    </div></div>
       <div className="fixed bottom-0 left-[50%] translate-x-[-50%] mb-5">
-        <a
-          href="/blogs"
-          className="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold text-[#f76c6c] transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 group mt-5"
-        >
-          <>
-            <span className="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-[#f76c6c] group-hover:h-full"></span>
-            <span className="absolute right-0 pr-4 duration-200 ease-out group-hover:translate-x-12">
-              <svg
-                className="w-5 h-5 text-[#f76c6c]"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M14 5l7 7m0 0l-7 7m7-7H3"
-                ></path>
-              </svg>
-            </span>
-            <span className="absolute left-0 pl-2.5 -translate-x-12 group-hover:translate-x-0 ease-out duration-200">
-              <svg
-                className="w-5 h-5 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M14 5l7 7m0 0l-7 7m7-7H3"
-                ></path>
-              </svg>
-            </span>
-            <span className="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white tracking-widest uppercase">
-              Other blogs
-            </span>
-          </>
-        </a>
+        <Link href="/blogs">
+          <div className="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold text-[#f76c6c] transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 group mt-5">
+            <>
+              <span className="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-[#f76c6c] group-hover:h-full"></span>
+              <span className="absolute right-0 pr-4 duration-200 ease-out group-hover:translate-x-12">
+                <svg
+                  className="w-5 h-5 text-[#f76c6c]"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M14 5l7 7m0 0l-7 7m7-7H3"
+                  ></path>
+                </svg>
+              </span>
+              <span className="absolute left-0 pl-2.5 -translate-x-12 group-hover:translate-x-0 ease-out duration-200">
+                <svg
+                  className="w-5 h-5 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M14 5l7 7m0 0l-7 7m7-7H3"
+                  ></path>
+                </svg>
+              </span>
+              <span className="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white tracking-widest uppercase">
+                Other blogs
+              </span>
+            </>
+          </div>
+        </Link>
       </div>
 
       <script

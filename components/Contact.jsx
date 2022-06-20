@@ -25,7 +25,7 @@ const Contact = () => {
               <a
                 href="https://www.linkedin.com/in/arshdsingh"
                 target="_blank"
-                rel="author"
+                rel="noreferrer"
               >
                 <div className="rounded-full shadow-xl shadow-gray-400 p-4  cursor-pointer hover:scale-105 ease-in duration-500 icon hover:shadow-none">
                   <FaLinkedinIn />
@@ -34,7 +34,7 @@ const Contact = () => {
               <a
                 href="https://www.instagram.com/arshhhyyy/"
                 target="_blank"
-                rel="author"
+                rel="noreferrer"
               >
                 <div className="rounded-full shadow-xl shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-500 icon hover:shadow-none">
                   <FaInstagram />
@@ -43,7 +43,7 @@ const Contact = () => {
               <a
                 href="mailto:sarshdeep2774@gmail.com"
                 target="_blank"
-                rel="author"
+                rel="noreferrer"
               >
                 <div className="rounded-full shadow-xl shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-500 icon hover:shadow-none">
                   <AiOutlineMail />

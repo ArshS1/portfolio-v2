@@ -17,7 +17,7 @@ const ProjectItem = ({ title, background, projectLink, shortDesc }) => {
         </h3>
         <p className="pb-4 pt-2 text-white text-center ">{shortDesc}</p>
         <div className={projectLink === "/arshbot" ? "hidden" : "w-40 m-auto"}>
-          <a href={projectLink} target="_blank" rel="author">
+          <a href={projectLink} target="_blank" rel="noreferrer">
             <p className="text-center py-3 rounded-lg bg-white text-gray-700 font-bold text-lg">
               Learn more
             </p>

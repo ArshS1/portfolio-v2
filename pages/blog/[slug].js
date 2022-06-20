@@ -40,7 +40,7 @@ const Post = ({ blog }) => {
         <p className="uppercase text-sm tracking-widest text-gray-600 mt-1">
           {blog.blogImage.caption}
         </p>
-        <div className="mt-4 uppercase text-3xl tracking-widest text-[#f76c6c]">
+        <div className="mt-4 uppercase text-xl md:text-3xl tracking-widest text-[#f76c6c]  text-center">
           {blog.title}
         </div>
         <div>
@@ -80,7 +80,7 @@ const Post = ({ blog }) => {
           </div>
         </div>
       </div>
-      <div className="fixed bottom-0 left-[50%] translate-x-[-50%] mb-5">
+      <div className="fixed bottom-0 left-[50%] translate-x-[-50%] mb-1 md:mb-5">
         <Link href="/blogs">
           <div className="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold text-[#f76c6c] transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 group mt-5">
             <>

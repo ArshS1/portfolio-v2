@@ -7,8 +7,8 @@ const Main = () => {
   return (
     <div id="home" className="w-full h-screen text-center">
       <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex items-center justify-center">
-        <div>
-          <div className="sm:invisible box md:flex md:visible hover:opacity-0 transition ease-in-out duration-300">
+        <div className="">
+          <div className="invisible lg:visible box md:flex md:visible hover:opacity-0 transition ease-in-out duration-300">
             <div className="eye"></div>
             <div className="eye"></div>
           </div>

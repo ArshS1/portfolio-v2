@@ -96,11 +96,11 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="absolute right-10 bottom-10  rounded-full shadow-xl shadow-gray-400 p-6 hover:scale-105 hover:shadow-none ease-in duration-500 icon invisible lg:visible">
-          <Link href="/#home">
+        <Link href="/#home">
+          <div className="absolute right-10 bottom-10  rounded-full shadow-xl shadow-gray-400 p-6 hover:scale-105 hover:shadow-none ease-in duration-500 icon invisible lg:visible">
             <HiOutlineChevronDoubleUp />
-          </Link>
-        </div>
+          </div>
+        </Link>
       </div>
     </div>
   );

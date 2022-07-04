@@ -2,10 +2,9 @@ import "../styles/globals.css";
 import Navbar from "../components/Navbar";
 import dynamic from "next/dynamic";
 
-
 function MyApp({ Component, pageProps }) {
-  const AnimatedCursor = dynamic(() => import('react-animated-cursor'), {
-    ssr: false
+  const AnimatedCursor = dynamic(() => import("react-animated-cursor"), {
+    ssr: false,
   });
   return (
     <>

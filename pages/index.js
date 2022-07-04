@@ -12,7 +12,11 @@ import BlogComponent from "../components/BlogComponent";
 import imageUrlBuilder from "@sanity/image-url";
 import Link from "next/link";
 import Blog from "../components/Blog";
+import * as React from "react";
+
+
 export default function Home({ blogs }) {
+
   // connect to the CMS
   const client = createClient({
     projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
@@ -102,6 +106,9 @@ export default function Home({ blogs }) {
       <script
         dangerouslySetInnerHTML={{
           __html: `
+
+
+
 document.querySelector("body").addEventListener("mousemove", eyeball)
 function eyeball() {
   const eye = document.querySelectorAll(".eye");

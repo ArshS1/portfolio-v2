@@ -148,9 +148,9 @@ img {
 .box .eye::before {
   content: "";
   position: absolute;
-  top: 50%;
+  top: 0%;
   left: 35px;
-  transform: translate(-50%, -50%);
+  transform: translate(-60%, 70%);
   width: 45px;
   height: 45px;
   border-radius: 50%;

@@ -80,7 +80,7 @@ const Post = ({ blog }) => {
           </div>
         </div>
       </div>
-      <div className="fixed bottom-0 left-[50%] translate-x-[-50%] mb-1 md:mb-5">
+      <div className="hidden md:flex fixed bottom-0 left-[50%] translate-x-[-50%] mb-1 md:mb-5">
         <Link href="/blogs">
           <div className="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold text-[#f76c6c] transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 group mt-5">
             <>

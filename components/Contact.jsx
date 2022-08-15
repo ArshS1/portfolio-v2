@@ -17,11 +17,11 @@ const Contact = () => {
           {/* right  */}
           <div className="col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4 p-10 flex flex-col items-center">
             <h2 className="py-2 text-2xl">Arshdeep Singh</h2>
-            <p className="uppercase text-sm tracking-widest text-gray-600">
+            <p className="uppercase text-sm tracking-widest text-gray-600 text-center">
               Looking for internships to learn more about the tech sector
             </p>
-            <p className="uppercase pt-8 tracking-widest">Connect with me</p>
-            <div className="w-full flex  items-center mt-5 justify-evenly">
+            <p className="uppercase pt-4 tracking-widest">Connect with me</p>
+            <div className="w-full flex  items-center mt-5 justify-center gap-8">
               <a
                 href="https://www.linkedin.com/in/arshdsingh"
                 target="_blank"
@@ -29,15 +29,6 @@ const Contact = () => {
               >
                 <div className="rounded-full shadow-xl shadow-gray-400 p-4  cursor-pointer hover:scale-105 ease-in duration-500 icon hover:shadow-none">
                   <FaLinkedinIn />
-                </div>
-              </a>
-              <a
-                href="https://www.instagram.com/arshhhyyy/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <div className="rounded-full shadow-xl shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-500 icon hover:shadow-none">
-                  <FaInstagram />
                 </div>
               </a>
               <a

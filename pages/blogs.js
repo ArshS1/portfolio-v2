@@ -6,17 +6,17 @@ import BlogComponent from "../components/BlogComponent";
 import imageUrlBuilder from "@sanity/image-url";
 import Link from "next/link";
 
-
 // A page specifally for only blogs ---- A GRID WITH 3 BLOGS PER ROW
 const blogs = ({ blogs }) => {
-  // fetch using proper credentials 
+  // fetch using proper credentials
   const client = createClient({
     projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
     dataset: process.env.NEXT_PUBLIC_SANITY_DATASET,
     useCdn: false,
+    apiVersion: "2021-08-31", // use a UTC date string
   });
 
-  // sanitys image builder -- check DOCUMENTATION 
+  // sanitys image builder -- check DOCUMENTATION
   const builder = imageUrlBuilder(client);
 
   return (
@@ -60,7 +60,7 @@ const blogs = ({ blogs }) => {
           </div>
         </div>
         <script
-        // ANIMATED CURSOR THINGS
+          // ANIMATED CURSOR THINGS
           dangerouslySetInnerHTML={{
             __html: `
 document.querySelector("body").addEventListener("mousemove", eyeball)
@@ -90,7 +90,7 @@ export async function getServerSideProps(context) {
     dataset: process.env.NEXT_PUBLIC_SANITY_DATASET,
     useCdn: false,
   });
- 
+
   const query = `*[_type == "blog"]`;
   const blogs = await client.fetch(query);
   return {

@@ -1,10 +1,10 @@
 import React from "react";
 import senghNft from "../public/assets/projectShots/senghNft.png";
-import discordBot from "../public/assets/projectShots/discordBot.png";
 import asLearn from "../public/assets/projectShots/asLearn.png";
 import inotez from "../public/assets/projectShots/iNotez.png";
+import sqlearn from "../public/assets/projectShots/sqlearn.png"
+import discordBot from "../public/assets/projectShots/discordBot.png"
 import rockPaperScissor from "../public/assets/projectShots/rockPaperScissor.png";
-import snakeGame from "../public/assets/projectShots/snakeGame.png";
 import ProjectItem from "./ProjectItem";
 
 const Projects = () => {
@@ -23,16 +23,16 @@ const Projects = () => {
             shortDesc="NextJS, React"
           />
           <ProjectItem
-            title="Arsh Bot"
-            background={discordBot}
-            projectLink="/arshbot"
-            shortDesc="Python (discord.py), AWS"
+            title="SQLearn"
+            background={sqlearn}
+            projectLink="https://github.com/ArshS1/SQLearn"
+            shortDesc="Python, Pandas, Streamlilt, SQL"
           />
           <ProjectItem
-            title="ASLearn"
-            background={asLearn}
-            projectLink="https://github.com/ArshS1/ASLearn"
-            shortDesc="HTML/CSS, JS"
+            title="Arsh Bot"
+            background={discordBot}
+            projectLink="https://arsh-bot.vercel.app/"
+            shortDesc="React, Python, AWS DynamoDB"
           />
           <ProjectItem
             title="iNotez"
@@ -47,9 +47,9 @@ const Projects = () => {
             shortDesc="Python (tkinter)"
           />
           <ProjectItem
-            title="Snake Game"
-            background={snakeGame}
-            projectLink="https://github.com/ArshS1/snakeGame"
+            title="ASLearn"
+            background={asLearn}
+            projectLink="https://github.com/ArshS1/ASLearn"
             shortDesc="HTML/CSS, JS"
           />
         </div>

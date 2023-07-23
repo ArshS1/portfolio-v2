@@ -33,30 +33,30 @@ const Navbar = () => {
     <div
       className={
         shadow
-          ? "fixed w-full h-20 shadow-xl z-[100]"
-          : "fixed w-full h-20 z-[100]"
+          ? "fixed w-full h-25 shadow-xl z-[100]"
+          : "fixed w-full h-25 z-[100]"
       }
     >
-      <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16 bg-[#a8d0e6] ">
+      <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16 bg-[#a8d0e6] mt-0.5">
         <Link href="/#home" className="icon">
-          <Image className="icon" src={navIcon} alt="/" width="90" height="80" />
+          <Image className="icon" src={navIcon} alt="/" width="90" height="90" />
         </Link>
         <div>
           <ul className="hidden md:flex">
             <Link href="/#home">
-              <li className="ml-10 text-sm uppercase ">Home</li>
+              <li className="ml-10 text-sm uppercase font-extrabold">Home</li>
             </Link>
             <Link href="/#about">
-              <li className="ml-10 text-sm uppercase ">About</li>
+              <li className="ml-10 text-sm uppercase font-extrabold">About</li>
             </Link>
             <Link href="/#work">
-              <li className="ml-10 text-sm uppercase ">Work</li>
+              <li className="ml-10 text-sm uppercase font-extrabold">Work</li>
             </Link>
             <Link href="/#blog">
-              <li className="ml-10 text-sm uppercase ">blog</li>
+              <li className="ml-10 text-sm uppercase font-extrabold">blog</li>
             </Link>
             <Link href="/#contact">
-              <li className="ml-10 text-sm uppercase ">Contact</li>
+              <li className="ml-10 text-sm uppercase font-extrabold">Contact</li>
             </Link>
           </ul>
           <div className="md:hidden cursor-pointer" onClick={handlerNavbar}>

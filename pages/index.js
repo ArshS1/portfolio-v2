@@ -112,9 +112,6 @@ export default function Home({ blogs }) {
       <script
         dangerouslySetInnerHTML={{
           __html: `
-
-
-
 document.querySelector("body").addEventListener("mousemove", eyeball)
 function eyeball() {
   const eye = document.querySelectorAll(".eye");
